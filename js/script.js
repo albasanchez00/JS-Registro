@@ -191,7 +191,7 @@ function validarPassword2() {
     let password2 = document.querySelector("#password2");
     let msnError = document.querySelector(".password2Error");
 
-    if (password1!==password2 || !password2.value.trim()) {
+    if (password1===password2 || !password2.value.trim()) {
         password2.classList.add("errorInput");
         password2.classList.remove("validoInput");
         msnError.textContent = "Las contraseñas no coinciden";
